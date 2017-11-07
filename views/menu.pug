@@ -1,0 +1,46 @@
+extends layout.pug
+
+block css
+	link(rel='stylesheet', type='text/css', href='/stylesheets/menu_style.css')
+
+block content
+	doctype html
+	html
+		body
+
+			.container
+				section.menu-section
+					.row
+						.col-md-12.line
+							h2.text-center Entrées
+					.row
+						include Entree.pug
+						.entrees
+							+entree(entree[0])
+							+entree(entree[1])
+							+entree(entree[2])
+							+entree(entree[3])
+					.row
+						.col-md-12.line
+							h2.text-center Pizzas	
+					.row
+						include Pizza.pug
+						.pizzas
+							+pizza(pizza[0])
+							+pizza(pizza[1])
+							+pizza(pizza[2])
+					.row
+						.pizzas
+							+pizza(pizza[3])
+							+pizza(pizza[4])
+							+pizza(pizza[5])
+					.row
+						.col-md-12
+							h2.text-center Desserts
+					.row
+						include Dessert.pug
+						.desserts
+							+dessert(desserts[0])
+							+dessert(desserts[1])
+							+dessert(desserts[2])
+							+dessert(desserts[3])

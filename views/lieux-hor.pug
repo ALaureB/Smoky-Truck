@@ -1,0 +1,60 @@
+extends layout
+
+block css
+	link(rel='stylesheet', type='text/css' href='/stylesheets/lieux-hor_style.css')
+
+block content
+
+	// Nous Trouver
+	.container
+		br
+		section.noustrouver
+			.row
+				.col-md-12.text-center
+					h2 Nous Trouver
+
+
+			br
+			.row
+				.col-xs-12.col-md-10.col-md-offset-1.table-style
+					table.table.table-striped.table-responsive
+						thead
+							tr.hauttableau
+								th
+									| 🍕🍕🍕
+								th
+									| Midi (11h-15h)
+								th
+									| Soir (18h-22h)
+						tbody
+							tr
+								td
+									| Lundi
+								td #{adresse[0].adresse}
+								td #{adresse[1].adresse}
+							tr
+								td
+									| Mardi
+								td #{adresse[2].adresse}
+								td #{adresse[3].adresse}
+							tr
+								td
+									| Mercredi
+								td #{adresse[4].adresse}
+								td #{adresse[5].adresse}
+							tr
+								td
+									| Jeudi
+								td #{adresse[6].adresse}
+								td #{adresse[7].adresse}
+							tr
+								td
+									| Vendredi
+								td #{adresse[8].adresse}
+								td #{adresse[9].adresse}
+			br
+			br
+
+			.row
+				.col-xs-12.col-md-10.col-md-offset-1
+					include map
