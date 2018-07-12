@@ -3,6 +3,10 @@
 
 ## **_Site vitrine pour Smoky Truck_**
 
+### Instrucctions de lancement
+- yarn
+- node bin/www
+- App disponible sur localhost:3000
 
 ##### **Caractéristiques du site**
 
